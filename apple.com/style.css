@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-navbtn {
+  justify-content: center !important;
+}
+.nav-item {
+  margin: 0px 8px 0px 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.header-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #f0f0f0;
+}
+
+.header-paragraph {
+  padding-top: 15px;
+  /* padding-bottom: 8px; */
+}
+
+.container {
+  max-width: 100% !important;
+  padding: 0px !important;
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+}
+.container img {
+  object-fit: none;
+  height: 650px;
+}
+.AipodPro {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  /* left: 50%;
+    transform: translate(-10%, -10%); */
+  color: white;
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.paragraph {
+  width: 100%;
+  position: absolute;
+  top: 70%;
+  /* left: 50%;
+    transform: translate(-10%, -10%); */
+  color: white;
+  font-size: 20px;
+}
+
+#btnprimary {
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 5px 15px 5px 15px;
+  /* left: 50%;
+    transform: translate(-10%, -10%); */
+}
+
+.AipodProbtn {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  align-items: center;
+}
+
+.giftmagic {
+  color: black;
+  top: 65%;
+}
+
+.p2 {
+  top: 75%;
+  color: black;
+}
+
+.giftbtn {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  align-items: center;
+}
+
+#btnshop {
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 5px 15px 5px 15px;
+}
+
+.ipphone {
+  top: 10%;
+}
+
+.p3 {
+  top: 20%;
+}
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 60%;
+  /* left: 50%; */
+  width: 100%;
+}
+
+#btnlearn {
+  border-radius: 20px;
+}
+
+.containerimg {
+  object-fit: cover !important;
+}
+
+.container2 {
+  margin: 10px;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+}
+
+.container2head {
+  top: 5%;
+}
+
+.container2paragraph {
+  top: 15%;
+}
+
+/* .btncontainer2 {
+} */
+
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+}
+.navbar-toggler {
+  border-color: #ccc;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,..."); /* Custom toggler icon */
+}
+
+#navbarNav {
+  justify-content: center;
+}
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+}
+
+.navbarheader {
+  background-color: rgba(245, 245, 247, 0.8);
+}
+
+.bg{
+  background-color: #F5F5F7;
+}
+
+.footerol{
+  padding: 17px 0 11px;
+  margin: 0 auto;
+  max-width: 980px;
+  color:rgba(0, 0, 0, 0.56); ;
+}
+.footerli{
+  font-size: 12px;
+  font-weight: 400;
+  list-style:none;
+  padding-top: 17px;
+  
+}
+
