@@ -1,0 +1,25 @@
+.b3bg{
+    background-color:lightgrey;
+    cursor: pointer;
+    height: 120px;
+    align-items: center;
+}
+
+.b4head{
+    color: #91E6B3;
+}
+
+.b4bg{
+    background-color: #13544E;
+}
+
+.b5bg{
+    background-color:#14A800;
+    border-color: #14A800;
+}
+
+@media (max-width: 575.98px) {
+    .mycol{
+        display: none;
+    }
+}

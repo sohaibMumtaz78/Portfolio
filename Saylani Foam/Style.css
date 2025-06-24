@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    text-align: center;
+
+}
+
+.headingcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.containerlogo{
+}
+
+.Portalbtn a{
+    background-color: transparent;
+    border: 1px solid #0D6DB7;
+    border-radius: 20px;
+    padding: 8px 20px;
+    border-color: #0D6DB7;
+    color: #0D6DB7;
+    text-decoration: none;
+    
+    
+}
+.Portalbtn a:hover{
+    background-color: #0066b3;
+    color: white;
+
+    
+}
+
+.Navbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    
+}
+
+.Navbtn button{
+    background-color: transparent;
+    border: 1px ridge lightslategray;
+    border-radius: 0px;
+    padding: 8px 20px;
+    border-color: #d3d3d3;
+    color: #0D6DB7;
+    text-decoration: none;
+    gap: 1px ;
+    cursor: pointer;
+    
+}
+
+.containertext{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    /* padding: 20px; */
+}
+
+                         Form
+/* .formbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* .containerform{
+    width: 100%;
+    max:  700px; 
+    
+} */
+
+.containerform .title{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.containerform form .user-details{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.user-details .text {
+    padding: 0px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    
+    
+}
+
+.input-box .details{
+    color: #0D6DB7;
+}
+.user-details .input-box select{
+    width: 500px;
+    padding: 20px 250px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-color: #8dc63f!important;
+    color: rgba(0, 0, 0, .85);
+    padding-left: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+
+    /* c-p-box */
+.containerform form .course-or-proficiency{    
+    display: flex;
+    justify-content: center;
+    
+    gap: 20px;
+    margin: 30px;
+    align-items: center;
+    
+}
+.course-or-proficiency .input-box input{
+    height: 45px;
+    width: 100%;
+    
+    
+}
+
+.input-box .details{
+    color: #0D6DB7;
+}
+.course-or-proficiency .input-box select{
+    width: 500px;
+    padding: 20px 250px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-color: #8dc63f!important;
+    color: rgba(0, 0, 0, .85);
+    padding-left: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+        /* Name */
+.containerform form .Name{    
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px;
+            align-items: center;
+            
+}
+.Name .input-box input{
+            height: 45px;
+            width: 100%;
+            
+            
+}        
+.input-box .details{
+            color: #0D6DB7;
+}
+/* .Name .input-box input{
+            border-color: #8dc63f;
+            border-radius: 5px;
+            background-color: initial;
+            color: #666;
+            padding-left: 15px ;
+            margin-top: 15px;
+} */
+
+.Name .input-box input{
+    width: 500px;
+    padding: 0px 122px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-color: #8dc63f!important;
+    color: rgba(0, 0, 0, .85);
+    padding-left: 15px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+/* Email Row */
+.containerform form .emailrow{    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+    align-items: center;
+    
+}
+.emailrow .input-box input{
+    height: 45px;
+    width: 100%;
+    
+    
+}        
+.input-box .details{
+    color: #0D6DB7;
+}
+
+
+.emailrow .input-box input{
+width: 500px;
+padding: 0px 190px;
+margin: 10px 0;
+box-sizing: border-box;
+border-color: #8dc63f!important;
+color: rgba(0, 0, 0, .85);
+padding-left: 15px;    
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60px;
+}
+
+/* cnicrow */
+.containerform form .cnicrow{    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+    align-items: center;
+    
+}
+.cnicrow .input-box input{
+    height: 45px;
+    width: 100%;
+    
+    
+}        
+.input-box .details{
+    color: #0D6DB7;
+}
+
+
+.cnicrow .input-box input{
+width: 500px;
+padding: 0px 122px;
+margin: 10px 0;
+box-sizing: border-box;
+border-color: #8dc63f!important;
+color: rgba(0, 0, 0, .85);
+padding-left: 15px;    
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60px;
+}
+
+/* DOB/Gender */
+.containerform form .DOBrow{    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+    align-items: center;
+    
+}
+.DOBrow .input-box input{
+    height: 45px;
+    width: 100%;
+    
+    
+}        
+.input-box .details{
+    color: #0D6DB7;
+}
+
+
+.DOBrow .input-box input {
+width: 500px;
+padding: 0px 20px;
+margin: 10px 0;
+box-sizing: border-box;
+border-color: #8dc63f!important;
+color: rgba(0, 0, 0, .85);
+/* padding-left: 05px;     */
+display: flex;
+/* justify-content: center;
+align-items: center; */
+height: 60px;
+}
+
+.DOBrow .input-box select{
+    width: 500px;
+    padding: 0px 122px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-color: #8dc63f!important;
+    color: rgba(0, 0, 0, .85);
+    padding-left: 15px;    
+    display: flex;
+    height: 60px;
+}
+
+
+/* Address-Row */
+.containerform form .Address-row{    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+    align-items: center;
+    
+}
+.Address-row .input-box input{
+    height: 45px;
+    width: 100%;
+    
+    
+}        
+.input-box .details{
+    color: #0D6DB7;
+}
+
+
+.Address-row .input-box input {
+width: 1020px;
+padding: 0px 20px;
+margin: 10px 0;
+box-sizing: border-box;
+border-color: #8dc63f!important;
+color: rgba(0, 0, 0, .85);
+/* padding-left: 05px;     */
+display: flex;
+/* justify-content: center;
+align-items: center; */
+height: 60px;
+}
+
+
+    /* Qualification-Row */
+.containerform form .qualification-row{    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+    align-items: center;
+    
+}
+.qualification-row .input-box input{
+    height: 45px;
+    width: 100%;
+    
+    
+}        
+.input-box .details{
+    color: #0D6DB7;
+}
+
+
+.qualification-row .input-box input {
+width: 1020px;
+padding: 0px 20px;
+margin: 10px 0;
+box-sizing: border-box;
+border-color: #8dc63f!important;
+color: rgba(0, 0, 0, .85);
+/* padding-left: 05px;     */
+display: flex;
+/* justify-content: center;
+align-items: center; */
+height: 60px;
+}
+
+.qualification-row .input-box select {
+    width: 1020px;
+    padding: 0px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-color: #8dc63f!important;
+    color: rgba(0, 0, 0, .85);
+    /* padding-left: 05px;     */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    height: 60px;
+    }
+

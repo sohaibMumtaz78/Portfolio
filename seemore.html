@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See More</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">My Work</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fa fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- <div class="headertext">
+                    <p>FrontEnd Dev</p>
+                    <h1>Hi, I'm <span>Sohaib</span><br>Mumtaz from Pakistan</h1>
+                </div> -->
+        </div>
+    </div>
+
+    <!-- My Work See More -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <H1 class="subtitle">My Work</H1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Apple</h3>
+                        <p>Recreated Apple website UI to showcase front-end skills.</p>
+                        <a href="./apple.com/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Saylani</h3>
+                        <p>Saylani-inspired responsive UI with modern layout and clean sections.</p>
+                        <a href="./Saylani web/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Upwork </h3>
+                        <p>Modern and clean Upwork-inspired UI built for showcasing design proficiency.</p>
+                        <a href="./upwork/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Hiring Mine </h3>
+                        <p>Designed a demo hiring website to demonstrate UI skills for job and recruitment portals.</p>
+                        <a href="./Hiring Mine/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Saylani foam.png" alt="">
+                    <div class="layer">
+                        <h3>Saylani Form </h3>
+                        <p>Created a Saylani-style registration form to demonstrate form design and structure.</p>
+                        <a href="./Saylani Foam/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="./seemore.html" class="btn">See More</a> -->
+        </div>
+    </div>
+
+    <!-- Contact/ -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sohaibmumtaz78@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 03173563078</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/shoaibmumtaz.shoaibali"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/ranaxshobii/"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sohaib-mumtaz-64a7222a1/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sohaibMumtaz78"><i><i
+                                    class="fa-brands fa-square-github"></i></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-squarefacebook"></i></a> -->
+                    </div>
+                    <a href="images/Sohaib-cv.zip" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Sohaib. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
