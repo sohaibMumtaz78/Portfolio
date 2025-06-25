@@ -404,14 +404,13 @@ nav .fa {
 @media only screen and (max-width: 600px) {
     .header-pg {
         background-image: url(images/123\ \(2\).png) !important;
-       background-size: 200px auto;
-        background-position: right bottom;
-
-
+        background-size: 200px auto;
+        background-position: right center;
+        height: 50vh;
     }
 
     .headertext {
-        margin-top: 100%;
+        /* margin-top: 100%; */
         font-size: 16px;
     }
 
@@ -458,7 +457,7 @@ nav .fa {
     }
 
     .about-col-1 {
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
 
     .about-col-2 {
