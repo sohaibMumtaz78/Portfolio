@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="signup-container">
+    <form class="signup-form" onsubmit="signinholder(event)">
+      <h2>Sign In</h2>
+      <div class="input-group">
+        <h6 for="email">Email Address</h6>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="input-group">
+        <h6 for="password">Password</h6>
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+      <button type="submit" onclick="signinholder()">Sign In</button>
+      <p class="signin-link">Don't have an account? <a href="./sign_up.html">Sign Up</a></p>
+    </form>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
