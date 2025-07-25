@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="fetchUserData()">
+    <div class="login_conatiner">
+        <h1>Namaz Tracker</h1>
+        <div class="login_form">
+            <span>Enter Prayer Name:</span>
+            <input type="text" placeholder="Fajr" id="prayername">
+
+            <span>Enter Prayer Time:</span>
+            <input type="text" placeholder="6:15am" id="prayertime">
+
+            <button onclick="addData()">Add Namaz</button>
+        </div>
+        <ul id="namazlist"></ul>
+        <button id="logout_btn">Log Out</button>
+        <button onclick="showHistory()">Show History</button>
+        <ul id="historylist"></ul>
+        <!-- <button></button> -->
+    </div>
+    <script type="module" src="dashboard.js"></script>
+</body>
+
+</html>
