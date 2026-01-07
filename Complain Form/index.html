@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Complaint Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+
+    <header class="main-header">
+        <div class="header-content">
+            <h1>⚖️ CMS Portal</h1>
+            <nav>
+                <button class="btn-logout" onclick="logout()">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hello">
+        <div class="card form-card">
+            <h2 id="welcomeUser">Welcome!</h2>
+            <p class="subtitle">Submit a new complaint below</p>
+            
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" id="name" placeholder="Full Name" />
+            </div>
+
+            <div class="form-group">
+                <label>Complaint Details</label>
+                <textarea id="complaint" rows="4" placeholder="Describe your issue in detail..."></textarea>
+            </div>
+
+            <button class="btn-login" onclick="addComplaint()">Submit Complaint</button>
+        </div>
+
+        <div class="card list-card">
+            <div class="list-header">
+                <h2>Complaint Status</h2>
+                <span class="badge">Track Your Issues</span>
+            </div>
+            <ul id="complaintList" class="styled-list">
+                </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
