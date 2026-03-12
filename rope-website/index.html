@@ -8,48 +8,67 @@
 
 <body>
 
-<header>
+<header class="header">
 
-  <img src="images/logo.png" alt="Khan Rope Company Logo" class="logo">
-  <h1>Buraq Rope Company</h1>
-  <p>Strong & High Quality Ropes</p>
-  
-  <!-- Banner Image -->
-  <img src="images/banner.jpg" alt="Ropes Banner" class="banner">
+<div class="logo-area">
+<img src="images/logo.png" class="logo">
+<h2>Buraq Rope</h2>
+</div>
 
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/923372314777" class="whatsapp">Order on WhatsApp</a>
-<i class="fa-brands fa-whatsapp"></i>
-</header>
-<nav>
+<!-- Mobile menu button -->
+<div class="menu-btn" onclick="toggleMenu()">
+☰
+</div>
+
+<nav class="navbar" id="navbar">
 <a href="#">Home</a>
 <a href="#">Products</a>
 <a href="#">Contact</a>
 </nav>
 
+</header>
+
 <section class="products">
 
 <h2>Our Rope Products</h2>
 
+<div class="product-grid">
+
 <div class="product-card">
-  <img src="images/rope1.jpg" alt="Nylon Rope">
-  <h3>Nylon Rope</h3>
-  <p>Strong nylon rope for heavy work.</p>
+<img src="images/rope1.jpg">
+<h3>Nylon Rope</h3>
+<p>Strong nylon rope for heavy work.</p>
+<a href="https://wa.me/923000000000" class="order-btn">Order on WhatsApp</a>
 </div>
 
 <div class="product-card">
-  <img src="images/rope2.jpg" alt="Cotton Rope">
-  <h3>Cotton Rope</h3>
-  <p>High quality cotton rope.</p>
+<img src="images/rope2.jpg">
+<h3>Cotton Rope</h3>
+<p>High quality cotton rope.</p>
+<a href="https://wa.me/923000000000" class="order-btn">Order on WhatsApp</a>
 </div>
 
 <div class="product-card">
-  <img src="images/rope3.jpg" alt="Plastic Rope">
-  <h3>Plastic Rope</h3>
-  <p>Durable plastic rope for everyday use.</p>
+<img src="images/rope3.jpg">
+<h3>Plastic Rope</h3>
+<p>Durable plastic rope.</p>
+<a href="https://wa.me/923000000000" class="order-btn">Order on WhatsApp</a>
+</div>
+
 </div>
 
 </section>
+<script>
+function toggleMenu(){
+var menu = document.getElementById("navbar");
+
+if(menu.style.display === "block"){
+menu.style.display = "none";
+}else{
+menu.style.display = "block";
+}
+}
+</script>
 
 <footer>
   <p>Contact: 03372314777</p>

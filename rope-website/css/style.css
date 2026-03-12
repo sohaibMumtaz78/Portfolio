@@ -1,14 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
 body{
 font-family: Arial;
 margin:0;
 background:#f4f4f4;
 }
 
-header{
-background:#0a3d62;
-color:white;
-text-align:center;
-padding:20px;
+/* HEADER / NAVBAR */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#ffffff;
+width:100%;
+
+position:sticky;
+top:0;
+z-index:100;
+
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 .banner{
 width:100%;
@@ -31,23 +46,59 @@ font-size:18px;
 font-weight:bold;
 }
 
+.logo-area{
+display:flex;
+align-items:center;
+}
+
 .logo{
-width:120px;   /* logo ka size */
-display:block;
-margin: 0 auto 10px auto; /* center me aur thoda niche */
+width:40px;
+margin-right:10px;
 }
 
-nav{
-background:#333;
-text-align:center;
-padding:10px;
-}
-
-nav a{
-color:white;
-margin:15px;
+.navbar a{
+margin-left:20px;
 text-decoration:none;
-font-size:18px;
+color:#333;
+font-weight:500;
+}
+
+.navbar a:hover{
+color:#f1c40f;
+}
+
+/* mobile menu button */
+
+.menu-btn{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width:768px){
+
+.navbar{
+display:none;
+position:absolute;
+top:70px;
+right:0;
+background:#0a3d62;
+width:200px;
+text-align:center;
+}
+
+.navbar a{
+display:block;
+padding:15px;
+border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+.menu-btn{
+display:block;
+}
+
 }
 
 .products{
@@ -107,6 +158,62 @@ box-shadow:0 0 10px rgba(0,0,0,0.2);
 width:100%;
 border-radius:10px;
 }
+/* PRODUCTS GRID */
+
+.products{
+padding:60px 40px;
+text-align:center;
+background:#f5f5f5;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:30px;
+}
+
+.product-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:transform 0.3s;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.product-card img{
+width:100%;
+border-radius:10px;
+}
+
+.order-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:16px;
+}
+.order-btn{
+display:inline-block;
+margin-top:auto;
+padding:10px 20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:16px;
+}
 
 footer{
 background:#222;
@@ -161,7 +268,7 @@ transform: scale(1.2);
   }
 
   .logo{
-    width:100px;     /* Logo smaller on mobile */
+    width:200px;     /* Logo smaller on mobile */
   }
 
   .banner{
@@ -169,7 +276,7 @@ transform: scale(1.2);
   }
 
   .whatsapp{
-    width:80%;       /* Button smaller on mobile */
+    width:80%;      /* Button smaller on mobile */
     font-size:16px;
   }
 }
@@ -179,7 +286,7 @@ bottom:20px;
 right:20px;
 width:60px;
 height:60px;
-z-index:1000;
+z-index:100;
 }
 
 .whatsapp-sticky img{
