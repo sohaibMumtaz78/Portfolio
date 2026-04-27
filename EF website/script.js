@@ -5,3 +5,4 @@ function orderNow(product) {
   let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   window.open(url, '_blank');
 }
+

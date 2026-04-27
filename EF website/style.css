@@ -25,7 +25,8 @@ header {
     margin: 0 auto;
     color: #A87E73;
     border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    gap: 15px;
 }
 
 .hero-text {
@@ -201,4 +202,27 @@ button:hover {
 .feature-icon svg, .feature-icon img {
     width: 35px;
     height: 35px;
+}
+
+
+.shop-now-btn {
+    background-color: #593C25;
+    color: #D2B9A6;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shop-now-btn:hover {
+    background-color: #D2B9A6;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 32px;
+    }
 }
