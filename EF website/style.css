@@ -1,0 +1,204 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #A87E73;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(90deg, #0f2027, #2c5364); */
+  background: #A87E73;
+  padding: 15px;
+}
+
+
+.hero-container {
+    display: flex;
+    align-items: center;      /* Vertically center karne ke liye */
+    justify-content: space-between; /* Dono ke darmiyan barabar jagah ke liye */
+    padding: 50px;
+    background-color: #A87E73; /* Aapki theme ka light green */
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #A87E73;
+    border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+    flex: 1; /* Ye text ko 50% jagah dega */
+}
+
+.hero-image {
+    flex: 1; /* Ye image ko 50% jagah dega */
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%; /* Image box se bahar nahi jayegi */
+    height: auto;
+}
+
+/* Mobile ke liye settings */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; /* Mobile par image niche aa jayegi */
+        text-align: center;
+    }
+    .hero-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Hero */
+.hero {
+  background: #D2B9A6;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #593C25;
+  margin: 10px 0;
+}
+
+.hero h2 {
+  color: #593C25;
+  margin: 10px 0;
+}
+
+.hero p {
+  color: #593C25;
+  margin: 10px 0;
+}
+
+/* Title */
+.title {
+    color: #593C25;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Products */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+  gap: 20px;
+  background-color: #D2B9A6;
+}
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+.product {
+  background: #A87E73;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  color: #593C25;
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Discount Badge */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #593C25;
+  color: #D2B9A6;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Price */
+.price {
+  font-size: 18px;
+  color: #593C25;
+}
+
+.price span {
+  text-decoration: line-through;
+  color: #D2B9A6;   
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+/* Button */
+button {
+  background: #593C25;
+  color: #D2B9A6;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background:#D2B9A6;
+  color:#593C25 ;
+}
+
+/* footer */
+.features-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    background-color: #A87E73; /* Light background like the image */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #D2B9A6;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow like image */
+    border: 1px solid #f0f0f0;
+}
+
+.feature-icon {
+    font-size: 24px;
+    color: #28a745; /* Image green theme */
+}
+
+.feature-text h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #593C25;
+}
+
+.feature-text p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #593C25;
+}
+
+/* Icons adjustment (If using SVGs/Fonts) */
+.feature-icon svg, .feature-icon img {
+    width: 35px;
+    height: 35px;
+}
